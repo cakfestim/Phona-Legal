@@ -10,88 +10,100 @@
 <body>
   <header class="site-header shell">
     <a class="brand" href="../" aria-label="PHONA Legal home">PHONA<div class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></a>
-    <span>Legal · v2.7</span>
+    <span>Legal · v2.7.1</span>
   </header>
   <main class="shell">
     <section class="legal-header">
       <a class="back-link" href="../">← All legal documents</a>
       <div class="kicker">Imaginary Arts · PHONA</div>
       <h1>Privacy Policy</h1>
-      <div class="updated">Last updated September 11, 2026</div>
+      <div class="updated">Last updated September 22, 2026</div>
     </section>
     <article class="legal-copy"><p>PHONA is a phonetic language tool developed by Imaginary Arts.</p>
 <p>PHONA is intended for users aged 16 and older.</p>
-<p>PHONA does not require user accounts and does not maintain user profiles, saved translation history, or a persistent translation database.</p>
+<p>PHONA does not require a PHONA account and does not maintain user profiles, a saved translation history, or a persistent translation database. The app may temporarily preserve the current screen on your device as described below.</p>
 <h2>1. Information PHONA Processes</h2>
-<p>PHONA processes only the information needed to provide translation, phonetic output, speech input, and advertising.</p>
+<p>PHONA processes information needed to provide translation, phonetic output, speech input, advertising, subscription features, security, and reliable app operation.</p>
 <h3>Text and Translation Requests</h3>
-<p>When you type text into PHONA, that text is sent through PHONA’s server infrastructure and then to OpenAI for moderation, translation, and phonetic processing.</p>
-<p>PHONA does not maintain a persistent translation history or translation database.</p>
-<p>OpenAI API data is not used to train OpenAI models by default unless the account owner explicitly opts in. PHONA’s OpenAI data-sharing options are disabled.</p>
-<p>OpenAI may still temporarily retain API inputs and outputs for abuse monitoring, security, or legal compliance in accordance with its API data-retention policies.</p>
+<p>When you submit text to PHONA, that text and the selected source and target languages are sent through PHONA’s server infrastructure and then to OpenAI for moderation, translation, and phonetic processing.</p>
+<p>PHONA does not maintain a server-side translation history or translation database.</p>
+<p>OpenAI API data is not used to train OpenAI models by default unless the account owner explicitly opts in. PHONA’s optional OpenAI data-sharing settings are disabled.</p>
+<p>OpenAI may temporarily retain API inputs and outputs for abuse monitoring, security, or legal compliance in accordance with its API data-retention policies.</p>
 <h3>Voice Input</h3>
-<p>PHONA requests microphone permission only when you choose to use the speech-input feature.</p>
+<p>PHONA requests microphone permission only when you choose to use voice input.</p>
 <p>Voice audio is handled by the speech-recognition service installed on your Android device. PHONA receives the resulting text transcript rather than storing the microphone recording itself.</p>
 <p>Depending on the speech-recognition service installed on the device, audio may be processed locally or may be streamed to remote servers operated by the speech-recognition provider.</p>
 <p>PHONA does not use the microphone in the background.</p>
 <h3>Advertising</h3>
-<p>PHONA uses Google AdMob to display advertisements.</p>
+<p>The ad-supported version of PHONA uses Google AdMob to display advertisements. Active PHONA Pro subscribers are not shown ads by PHONA.</p>
 <p>The Google Mobile Ads SDK may automatically collect or process information such as:</p>
 <ul><li>IP address</li><li>ad interactions</li><li>app interactions</li><li>diagnostic information</li><li>device or account identifiers</li><li>advertising identifiers where available</li></ul>
 <p>Google may use this information for purposes including advertising, analytics, measurement, fraud prevention, and security.</p>
-<p>Depending on your location and consent choices, PHONA may display personalized, non-personalized, or limited ads.</p>
+<p>Depending on your location and consent choices, PHONA may display personalized, non-personalized, limited, or other permitted forms of advertising.</p>
 <p>Choosing non-personalized advertising does not necessarily mean that no data is processed.</p>
-<h2>2. Cloudflare Infrastructure</h2>
-<p>PHONA uses Cloudflare for server and network infrastructure.</p>
+<h3>PHONA Pro and Google Play Billing</h3>
+<p>Where PHONA Pro is offered, purchases and subscriptions are processed through Google Play. Google handles payment credentials. PHONA does not receive or store your full payment-card or bank-account details.</p>
+<p>To offer, verify, restore, and manage PHONA Pro access, PHONA may process information supplied by Google Play, including:</p>
+<ul><li>subscription product and plan identifiers</li><li>purchase tokens or order references</li><li>purchase and acknowledgement status</li><li>subscription state</li><li>renewal and expiration information</li></ul>
+<p>This information is used to validate purchases, grant or restore Pro access, remove ads for active subscribers, prevent fraud, provide purchase support, and maintain subscription status. Purchase-verification information may pass through PHONA’s Cloudflare infrastructure to Google Play. A separate PHONA account is not required.</p>
+<h2>2. Cloudflare Infrastructure and Rate Limiting</h2>
+<p>PHONA uses Cloudflare for server, network, routing, security, and rate-limiting infrastructure.</p>
+<p>Cloudflare receives network information needed to handle requests, including IP addresses. PHONA’s translation service uses a network-address-based key to limit excessive request attempts. PHONA does not use that key to create a user profile.</p>
 <p>PHONA is configured so that:</p>
 <ul><li>routine invocation logs are disabled</li><li>tracing is disabled</li><li>translation text is not logged</li><li>raw exception messages are not logged</li><li>only limited diagnostic information such as fixed error codes and HTTP status codes may be logged</li></ul>
 <p>Under the current Cloudflare Free-plan configuration, applicable error logs expire after approximately three days.</p>
-<p>Cloudflare may still process network-level information necessary to provide infrastructure, security, and routing services according to its own privacy practices.</p>
-<h2>3. Information PHONA Does Not Maintain</h2>
+<p>Cloudflare may still process network-level information necessary to provide infrastructure, security, routing, and rate-limiting services according to its own privacy practices.</p>
+<h2>3. Information Stored on Your Device</h2>
+<p>To restore the active screen after an interruption, Android may temporarily retain the current input, selected languages, and most recent translation on your device. This state is not used to build a translation history and is not uploaded as a history database.</p>
+<p>PHONA also stores limited operational values on your device, such as successful-translation counts used for ad timing, the next ad threshold, the time of the last full-screen ad, and advertising-consent status. These operational values do not contain your translation text.</p>
+<p>When PHONA Pro is available, PHONA may also cache limited subscription-entitlement information on the device so that the interface can reflect your current access while purchase status is being checked with Google Play.</p>
+<p>Resetting PHONA clears the active input and translation. Clearing PHONA’s app storage or uninstalling the app removes PHONA’s locally stored app state and operational values, subject to information independently retained by third-party providers.</p>
+<h2>4. Information PHONA Does Not Maintain</h2>
 <p>PHONA does not maintain:</p>
-<ul><li>user accounts</li><li>profile information</li><li>names</li><li>contact lists</li><li>precise location</li><li>photos or personal files</li><li>saved translation history</li><li>a personal translation database</li><li>background microphone recordings</li><li>translation text in Cloudflare operational logs</li><li>raw exception content in Cloudflare operational logs</li></ul>
-<p>PHONA does not sell your translation text or microphone data.</p>
-<h2>4. Third-Party Services</h2>
-<p>PHONA relies on third-party services to provide some functionality.</p>
-<p>These currently include:</p>
-<ul><li>OpenAI — moderation, translation, and phonetic processing</li><li>Cloudflare — server, network, routing, and security infrastructure</li><li>Android speech-recognition services — speech-to-text when voice input is used</li><li>Google AdMob — advertising, analytics, measurement, and fraud prevention</li></ul>
+<ul><li>PHONA user accounts</li><li>user profiles</li><li>names or contact lists</li><li>precise location</li><li>photos or personal files</li><li>a saved translation history</li><li>a personal translation database</li><li>background microphone recordings</li><li>full payment-card or bank-account details</li><li>translation text in Cloudflare operational logs</li><li>raw exception content in Cloudflare operational logs</li></ul>
+<p>PHONA does not sell your translation text, microphone data, or purchase information.</p>
+<h2>5. Third-Party Services</h2>
+<p>PHONA relies on third-party services to provide some functionality. These currently include:</p>
+<ul><li>OpenAI — moderation, translation, and phonetic processing</li><li>Cloudflare — server, network, routing, rate limiting, security, and purchase-verification infrastructure</li><li>Android speech-recognition services — speech-to-text when voice input is used</li><li>device text-to-speech services — spoken playback of translated text</li><li>Google AdMob and Google’s consent-management tools — advertising, consent, analytics, measurement, and fraud prevention</li><li>Google Play and Google Play Billing — app distribution, purchases, subscriptions, entitlement status, and purchase management</li></ul>
 <p>These providers process information according to their own privacy policies and applicable terms.</p>
-<h2>5. Data Retention</h2>
-<p>PHONA does not maintain a persistent history of translation requests.</p>
+<h2>6. Data Retention</h2>
+<p>PHONA does not maintain a server-side history of translation requests.</p>
 <p>PHONA’s Cloudflare infrastructure is configured not to log translation text or raw exception content. Routine invocation logs and tracing are disabled.</p>
 <p>Limited diagnostic logs containing fixed error codes or HTTP status information may be retained temporarily and, under the current Cloudflare Free-plan configuration, expire after approximately three days.</p>
 <p>OpenAI may temporarily retain API inputs and outputs for abuse monitoring, security, or legal compliance according to its applicable API data-retention policies.</p>
-<p>Google AdMob and device speech-recognition providers may have separate retention practices outside PHONA’s direct control.</p>
-<h2>6. Microphone Permission</h2>
+<p>Current-screen state and operational values stored by PHONA remain on the device only as needed for their described functions and can be removed by clearing app storage or uninstalling PHONA.</p>
+<p>Google Play may retain purchase and subscription records according to Google’s own policies. PHONA retains or processes purchase-verification information only for as long as reasonably necessary to provide subscription access, restore purchases, prevent fraud, meet legal or accounting obligations, and resolve purchase disputes.</p>
+<p>Google AdMob, Google Play, Cloudflare, OpenAI, and device speech-recognition providers may have separate retention practices outside PHONA’s direct control.</p>
+<h2>7. Microphone Permission</h2>
 <p>PHONA requests microphone access only when you actively use voice input.</p>
 <p>Microphone permission is used so that the device’s speech-recognition service can convert speech into text.</p>
 <p>You may deny or revoke microphone permission at any time through your device settings.</p>
 <p>Typed translation remains available without microphone access.</p>
-<h2>7. Advertising Consent</h2>
+<h2>8. Advertising Consent</h2>
 <p>Where required by law, PHONA may present advertising-consent choices through Google’s consent-management tools.</p>
 <p>Depending on your region and selections, Google may provide personalized, non-personalized, limited, or other permitted forms of advertising.</p>
-<p>You may be able to review or update advertising choices through PHONA, your device settings, or Google privacy settings.</p>
-<h2>8. Age Requirement</h2>
+<p>Where available, you can review or update advertising choices through PHONA, your device settings, or Google privacy settings.</p>
+<h2>9. Age Requirement</h2>
 <p>PHONA is intended for users aged 16 and older.</p>
 <p>PHONA is not directed to children under 16.</p>
 <p>If we become aware that personal information from a user under 16 has been processed in violation of applicable law, we will take reasonable steps to address the issue.</p>
-<h2>9. Security</h2>
+<h2>10. Security</h2>
 <p>PHONA uses secure network connections and server-side controls intended to protect information while it is transmitted between the app and its service providers.</p>
 <p>No method of electronic transmission or storage can be guaranteed to be completely secure.</p>
-<h2>10. Your Choices</h2>
+<h2>11. Your Choices</h2>
 <p>You can:</p>
-<ul><li>use PHONA without creating an account</li><li>use typed translation without granting microphone permission</li><li>deny or revoke microphone permission through your device settings</li><li>manage advertising-consent choices where available</li><li>stop using PHONA at any time</li></ul>
-<p>Because PHONA does not maintain user accounts or a persistent translation-history database, there is generally no PHONA account data to delete.</p>
-<h2>11. Google Play Data Safety</h2>
+<ul><li>use PHONA without creating a PHONA account</li><li>use typed translation without granting microphone permission</li><li>deny or revoke microphone permission through your device settings</li><li>manage advertising-consent choices where available</li><li>manage or cancel a PHONA Pro subscription through Google Play</li><li>restore eligible purchases through PHONA or Google Play</li><li>clear PHONA’s app storage or uninstall PHONA to remove locally stored app state</li><li>stop using PHONA at any time</li></ul>
+<p>Because PHONA does not maintain user accounts or a persistent translation-history database, there is generally no PHONA account or server-side translation history to delete. Purchase records maintained by Google Play are governed by Google’s services and policies.</p>
+<h2>12. Google Play Data Safety</h2>
 <p>PHONA’s Google Play Data Safety disclosures are intended to reflect the actual behavior of the app and its integrated services.</p>
-<p>These disclosures may include information about data processed by third-party services such as OpenAI, Cloudflare, Android speech-recognition services, and Google AdMob.</p>
-<h2>12. Changes to This Privacy Policy</h2>
-<p>This Privacy Policy may be updated if PHONA’s features, service providers, advertising setup, infrastructure, or data practices change.</p>
+<p>These disclosures may include information processed by third-party services such as OpenAI, Cloudflare, Android speech-recognition services, Google AdMob, and Google Play Billing.</p>
+<h2>13. Changes to This Privacy Policy</h2>
+<p>This Privacy Policy may be updated if PHONA’s features, service providers, subscription or advertising setup, infrastructure, or data practices change.</p>
 <p>The “Last updated” date at the top of this policy will be revised whenever material changes are made.</p>
-<h2>13. Contact</h2>
+<h2>14. Contact</h2>
 <p>For privacy questions, requests, or concerns, contact:</p>
 <address>Imaginary Arts<br>Email: <a href="mailto:imaginaryartsapps@outlook.com">imaginaryartsapps@outlook.com</a></address></article>
   </main>
-  <footer class="site-footer shell"><span class="footer-mark">PHONA · v2.7</span><span>Created by Imaginary Arts</span></footer>
+  <footer class="site-footer shell"><span class="footer-mark">PHONA · v2.7.1</span><span>Created by Imaginary Arts</span></footer>
 </body>
 </html>
